@@ -210,11 +210,11 @@ div.group-icons a {
 .cta-right button {
     border: 0px;
     height: 60px;
-    background-color: #5cd0f3;
-    color: #1D2437;
+    background-color: #0084ff;
+    color: white;
     padding: 0 30px;
     cursor: pointer;
-    font-size: 16px;/*tamanho da fonte do campo email*/
+    font-size: 20px;/*tamanho da fonte do campo email*/
     font-weight: bold;
     width: 100%;
 }
@@ -332,13 +332,13 @@ footer {
         color: #777;
     }
     .cta-right input {
-        height: 70px;
+        height: 60px;
         border-radius: 10px;
     }
     .cta-right button {
-        height: 70px;
+        height: 60px;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 22px;
     }
     .info {
         display: none;
