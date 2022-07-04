@@ -59,6 +59,7 @@ input::placeholder {
     font-size: 16px; /*tamanho da fonte do campo email*/
     width: 270px;
     padding: 0 10px;
+    cursor: not-allowed;
 }
 .heroArea .leftside .form button{
     border: 0px;
@@ -204,6 +205,7 @@ div.group-icons a {
     width: 100%;
     padding: 0 10px;
     margin-bottom: 20px;
+    cursor: not-allowed;/*altere o cursor para o simbolo não permitido*/
 }
 .cta-right button {
     border: 0px;
@@ -320,6 +322,7 @@ footer {
         margin-bottom: 20px;
         font-size: 20px;
         border-radius: 10px;
+
     }
     .heroArea .leftside .form button {
         width: 100%;
