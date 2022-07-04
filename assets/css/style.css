@@ -282,8 +282,8 @@ footer {
         display: none;
     }
     .heroArea .rightside_autor {
-
       height: 390px;
+      margin: -20px;
     }
     .heroArea .rightside .right-side-linear {
         width: 100%;
