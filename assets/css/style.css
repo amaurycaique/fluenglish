@@ -74,6 +74,9 @@ input::placeholder {
 .heroArea .leftside .form button:hover {
     opacity: 0.7;
 }
+div.group-icons a {
+    text-decoration: none;
+}
 .heroArea .leftside .group-icons {
     margin-bottom: 60px;
 }
