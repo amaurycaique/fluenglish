@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400&family=Prosto+One&family=Roboto:wght@400;700&display=swap');
+* {box-sizing: border-box;}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1070px;
+    margin: auto;
+    color: aliceblue;
+}
+header {
+    padding-top: 45px;
+}
+.heroArea {
+    display: flex;
+}
+.sobre_autora {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sobre_autora .leftside {
+    text-align: end;
+}
+
+.heroArea .leftside {
+    flex: 1;
+}
+.heroArea .leftside h1 {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 50px;
+    margin: 80px 0 30px 0;
+    color: #1D2437;
+}
+.heroArea .leftside .subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    color:#777;
+    margin-bottom: 30px;
+    padding: 0 0 0 10px;
+}
+.heroArea .leftside .form {
+    margin-bottom: 20px;
+}
+input::placeholder {
+    color: #1D2437;
+    font-size: 17px;
+  }
+.heroArea .leftside .form input{
+    border: 1px solid #9999;
+    background: white;
+    height: 60px;
+    outline-color: #5cd0f3;/*altera a cor da borda do campo email ao ser clicado*/
+    color: #fff;
+    font-size: 16px; /*tamanho da fonte do campo email*/
+    width: 270px;
+    padding: 0 10px;
+}
+.heroArea .leftside .form button{
+    border: 0px;
+    height: 60px;
+    background-color: #5cd0f3;
+    color: #1D2437;
+    padding: 0 40px;
+    margin-left: 3px;
+    cursor: pointer;
+    font-size: 20px;/*tamanho da fonte do campo email*/
+    font-weight: bold;
+}
+.heroArea .leftside .form button:hover {
+    opacity: 0.7;
+}
+.heroArea .leftside .group-icons {
+    margin-bottom: 60px;
+}
+.zoom {
+    transition: transform .5s;
+    
+  }
+  .zoom:hover {
+      -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5); 
+  }
+
+.heroArea .leftside .group-icons img{
+    margin-right: 10px;
+    width: 60px;
+}
+.heroArea .rightside {
+    flex: 1;
+    background-image: url('../images/tech/teacher1.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+/* SECTION INFO */
+
+.info {
+    border-bottom: 2px solid #EAEEFA;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info--text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c2c8cb;
+    margin: 0 10px;
+}
+.info-circle {
+    width: 6px;
+    height: 6px;
+    background-color: #c2c8cb;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+/**** SECTION INSTRUCTIONS ****/
+.inst-container {
+    margin: auto;
+    max-width: 900px;
+    padding: 70px 0;
+}
+.inst-item {
+    border-left: 3px solid #c2c8cb;
+    display: flex;
+}
+.inst-circle {
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background-color: royalblue;
+    margin-left: -9px;
+}
+.inst-text {
+    flex: 1;
+    margin-left: 50px;
+}
+.inst-text h2 {
+    font-size: 32px;
+    color: black;
+    margin: -10px 0 20px 0;
+}
+.inst-text p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #777;
+    margin-bottom: 70px;
+}
+.inst-item:last-child {
+    border: 0;
+}
+.inst-item:last-child p {
+    margin: 0;
+}
+
+
+
+/*** ***/
+.cta {
+    background-color: transparent;
+}
+
+.cta-container {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    padding: 100px 0;
+    color: #fff;
+    align-items: center;
+}
+.cta-left {
+    flex: 1;
+    margin-right: 30px;
+} 
+.cta-right {
+    flex: 1;
+    margin-left: 30px;
+}
+.cta-left h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #1D2437;
+}
+.cta-left p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #777;
+}
+.cta-right input {
+    border: 1px solid #9999;
+    background: transparent;
+    height: 60px;
+    outline-color: #5cd0f3;/*altera a cor da borda do campo email ao ser clicado*/
+    color: #fff;
+    font-size: 20px; /*tamanho da fonte do campo email*/
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.cta-right button {
+    border: 0px;
+    height: 60px;
+    background-color: #5cd0f3;
+    color: #1D2437;
+    padding: 0 30px;
+    cursor: pointer;
+    font-size: 16px;/*tamanho da fonte do campo email*/
+    font-weight: bold;
+    width: 100%;
+}
+.cta-right button:hover {
+    opacity: 0.7;
+}
+
+.heroArea .rightside_autor {
+    flex: 1;
+    background-image: url('../images/tech/teacher_1.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+
+footer {
+    background-color: transparent;
+    color: #fff;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 40px 0;
+    max-width: 1070px;
+}
+.footer-right {
+    font-size: 16px;
+    color: #777;
+    text-align: right;
+    line-height: 25px;
+}
+.footer-right a {
+    color: #777;
+    text-decoration: none;
+}
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/**** RESPONSIVIDADE ****/
+@media (max-width: 1030px){
+    .main .container {
+        padding: 0 20px;
+    }
+    footer .footer-container {
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .heroArea {
+        flex-direction: column-reverse;
+    }
+    .heroArea .rightside {
+        height: 295px;
+        flex: none;
+        background-size: auto 100%;
+        background-position-x: center;
+    }
+    .rightside_autor .right-side-linear {
+        display: none;
+    }
+    .heroArea .rightside_autor {
+
+      height: 390px;
+    }
+    .heroArea .rightside .right-side-linear {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, #61b9ffeb 8.92%, rgba(29,36,55,0)65.85%);
+        border-radius: 30px;
+    }
+    .heroArea .leftside h1 {
+        margin-top: 0;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 32px;
+    }
+    .inst-item {
+        margin: 0 10em;
+    }
+    .inst-text {
+        margin-left: 30px;
+    }
+    .inst-text p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .heroArea .leftside .subtitle {
+        text-align: center;
+        line-height: 30px;
+        padding: 0;
+        
+    }
+    .heroArea .leftside .form input{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .heroArea .leftside .form button {
+        width: 100%;
+        margin: 0;
+        border-radius: 10px;
+    }
+    .heroArea .leftside .group-icons {
+        text-align: center;
+    }
+    input::placeholder {
+        font-size: 20px;
+        color: #777;
+    }
+    .cta-right input {
+        height: 70px;
+        border-radius: 10px;
+    }
+    .cta-right button {
+        height: 70px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    .info {
+        display: none;
+    }
+    .instructions .inst-item {
+        margin: 0 3em;
+    }
+    .cta-container {
+        flex-direction: column;
+        margin: 0 20px;
+        padding: 0;
+    }
+    .cta .cta-left, .cta .cta-right {
+        margin: 0;
+    }
+    .cta .cta-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cta-left p {
+        font-size: 20px;
+        line-height: 30px;
+        color: #777;
+    }
+    header {
+        text-align: center;
+        padding-top: 0;
+        margin: 0;
+        padding: 50px 0px;
+    }
+    footer .footer-container {
+        flex-direction: column;
+    }
+    footer .footer-left{
+        margin-bottom: 30px;
+    }
+    footer .footer-right{
+        text-align: center;
+    }
+}
