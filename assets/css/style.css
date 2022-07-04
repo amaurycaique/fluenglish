@@ -276,6 +276,7 @@ footer {
 @media (max-width: 900px) {
     .heroArea {
         flex-direction: column-reverse;
+        margin: 10em 0 0 0;
     }
     .heroArea .rightside {
         height: 310px;
@@ -384,3 +385,129 @@ footer {
         text-align: center;
     }
 }
+/* TIME LINE CSS */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #0084ff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  .container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  .container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -15px;
+    background-color: #1D2437;
+    border: 4px solid  #0084ff;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    left: 50%;
+  }
+
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #0086ff0a;
+  }
+
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #0086ff0a transparent transparent;
+  }
+
+  .right::after {
+    left: -19px;
+  }
+
+  .content {
+    padding: 20px 30px;
+    background-color: rgba(0, 134, 255, 0.04);
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 30px 60px rgba(96, 131, 180, 0.2);
+    
+  }
+  .content h2 {
+    font-size: 35px;
+  }
+
+  .content p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #777;
+  }
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+      .timeline::after {
+        left: 31px;
+      }
+    
+    /* Full-width containers */
+      .container1 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+    
+    /* Make sure that all arrows are pointing leftwards */
+      .container1::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    
+    /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+        left: 15px;
+        top: 60px;
+      }
+    
+    /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+    }
