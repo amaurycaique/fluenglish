@@ -163,8 +163,6 @@ div.group-icons a {
     margin: 0;
 }
 
-
-
 /*** ***/
 .cta {
     background-color: transparent;
@@ -258,6 +256,11 @@ footer {
 }
 
 /**** RESPONSIVIDADE ****/
+@media (min-width: 360px) {
+    .leftside_sobre {
+        padding: 0 20px;
+    }
+}
 @media (max-width: 1030px){
     .main .container {
         padding: 0 20px;
