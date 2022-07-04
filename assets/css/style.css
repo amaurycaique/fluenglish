@@ -273,7 +273,7 @@ footer {
         flex-direction: column-reverse;
     }
     .heroArea .rightside {
-        height: 295px;
+        height: 310px;
         flex: none;
         background-size: auto 100%;
         background-position-x: center;
@@ -349,7 +349,7 @@ footer {
     .cta-container {
         flex-direction: column;
         margin: 0 20px;
-        padding: 0;
+        padding: 0 0 40px 0;
     }
     .cta .cta-left, .cta .cta-right {
         margin: 0;
