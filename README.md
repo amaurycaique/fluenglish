@@ -14,4 +14,4 @@ Esse é mais um estudo onde estou implementando novas funções e animações pa
 O site se adapta facilmente aos tamanhos de Tela como: 
 Desktop, Tablet e Smartphone. Todos os Direitos Autorais a Caíque Silva - Projeto feito para fins de portfolio.
 
-#### Para acessar o site: [Projeto Flu English](https://amaurycaique.github.io/openenglish/)
+#### Para acessar o site: [Projeto Flu English](https://amaurycaique.github.io/fluenglish/)
