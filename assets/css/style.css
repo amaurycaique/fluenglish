@@ -20,6 +20,7 @@ header {
 .sobre_autora {
     display: flex;
     flex-direction: row-reverse;
+    padding: 60px 0 0 0px;
 }
 
 .sobre_autora .leftside {
@@ -47,12 +48,13 @@ header {
     margin-bottom: 20px;
 }
 input::placeholder {
-    color: #1D2437;
+    color: #777;
+    font-weight: 600;
     font-size: 17px;
   }
 .heroArea .leftside .form input{
     border: 1px solid #9999;
-    background: white;
+    background: transparent;
     height: 60px;
     outline-color: #5cd0f3;/*altera a cor da borda do campo email ao ser clicado*/
     color: #fff;
@@ -64,8 +66,8 @@ input::placeholder {
 .heroArea .leftside .form button{
     border: 0px;
     height: 60px;
-    background-color: #5cd0f3;
-    color: #1D2437;
+    background-color: #0084ff;
+    color: white;
     padding: 0 40px;
     margin-left: 3px;
     cursor: pointer;
@@ -78,9 +80,9 @@ input::placeholder {
 div.group-icons a {
     text-decoration: none;
 }
-.heroArea .leftside .group-icons {
+/*.heroArea .leftside .group-icons {
     margin-bottom: 60px;
-}
+}*/
 .zoom {
     transition: transform .5s;
     
@@ -106,8 +108,7 @@ div.group-icons a {
 /* SECTION INFO */
 
 .info {
-    border-bottom: 2px solid #EAEEFA;
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,50 +126,9 @@ div.group-icons a {
     border-radius: 50%;
     margin: 0 10px;
 }
-/**** SECTION INSTRUCTIONS ****/
-.inst-container {
-    margin: auto;
-    max-width: 900px;
-    padding: 70px 0;
-}
-.inst-item {
-    border-left: 3px solid #c2c8cb;
-    display: flex;
-}
-.inst-circle {
-    border-radius: 50%;
-    width: 17px;
-    height: 17px;
-    background-color: royalblue;
-    margin-left: -9px;
-}
-.inst-text {
-    flex: 1;
-    margin-left: 50px;
-}
-.inst-text h2 {
-    font-size: 32px;
-    color: black;
-    margin: -10px 0 20px 0;
-}
-.inst-text p {
-    font-size: 20px;
-    line-height: 30px;
-    color: #777;
-    margin-bottom: 70px;
-}
-.inst-item:last-child {
-    border: 0;
-}
-.inst-item:last-child p {
-    margin: 0;
-}
-
-/*** ***/
 .cta {
     background-color: transparent;
 }
-
 .cta-container {
     margin: auto;
     max-width: 800px;
@@ -276,7 +236,6 @@ footer {
 @media (max-width: 900px) {
     .heroArea {
         flex-direction: column-reverse;
-        margin: 10em 0 0 0;
     }
     .heroArea .rightside {
         height: 310px;
@@ -288,12 +247,13 @@ footer {
         display: none;
     }
     .heroArea .rightside_autor {
-      height: 390px;
+      height: 380px;
+      margin: 6em 0 3em 0;
     }
     .heroArea .rightside .right-side-linear {
         width: 100%;
         height: 100%;
-        background: linear-gradient(360deg, #61b9ffeb 8.92%, rgba(29,36,55,0)65.85%);
+        background: linear-gradient(360deg, #188fffe6 8.92%, rgb(29 36 55 / 0%)65.85%);
         border-radius: 30px;
     }
     .heroArea .leftside h1 {
@@ -332,6 +292,7 @@ footer {
     }
     .heroArea .leftside .group-icons {
         text-align: center;
+        margin-bottom: 3em;
     }
     input::placeholder {
         font-size: 20px;
@@ -349,13 +310,10 @@ footer {
     .info {
         display: none;
     }
-    .instructions .inst-item {
-        margin: 0 3em;
-    }
     .cta-container {
         flex-direction: column;
-        margin: 0 20px;
-        padding: 0 0 40px 0;
+        margin: 40px 20px;
+        padding: 0;
     }
     .cta .cta-left, .cta .cta-right {
         margin: 0;
@@ -415,9 +373,9 @@ footer {
     width: 25px;
     height: 25px;
     right: -15px;
-    background-color: #1D2437;
+    background-color: white;
     border: 4px solid  #0084ff;
-    top: 15px;
+    top: 60px;
     border-radius: 50%;
     z-index: 1;
   }
@@ -462,14 +420,13 @@ footer {
 
   .content {
     padding: 20px 30px;
-    background-color: rgba(0, 134, 255, 0.04);
     position: relative;
     border-radius: 6px;
     box-shadow: 0px 30px 60px rgba(96, 131, 180, 0.2);
     
   }
   .content h2 {
-    font-size: 35px;
+    font-size: 29px;
   }
 
   .content p {
@@ -482,14 +439,15 @@ footer {
 @media screen and (max-width: 600px) {
     /* Place the timelime to the left */
       .timeline::after {
-        left: 31px;
+        left: 33px;
       }
     
     /* Full-width containers */
       .container1 {
         width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
+        padding-left: 60px;
+        padding-right: 20px;
+        padding-bottom: 60px;
       }
     
     /* Make sure that all arrows are pointing leftwards */
@@ -510,4 +468,12 @@ footer {
       .right {
         left: 0%;
       }
+      .left::before {
+        top: 67px;
+        border-color: transparent #2196f3 transparent transparent;
+    }
+    .right::before {
+        top: 67px;
+        border-color: transparent #2196f3 transparent transparent;
+    }
     }
